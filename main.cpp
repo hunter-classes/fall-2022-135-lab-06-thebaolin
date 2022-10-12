@@ -1,12 +1,10 @@
 #include <iostream>
-#include "vigenere.h"
-#include "caesar.h"
-#include "funcs.h"
+#include "caesar.cpp"
 using namespace std;
 
 int main()
 {
-
-  cout<< encryptVigenere("Hello, World!", "cake") << endl; //Jevpq, Wyvnd!
+    cout<<encryptCaesar("Way to Go!", 5)<<endl;
+  //cout<< encryptVigenere("Hello, World!", "cake") << endl; //Jevpq, Wyvnd!
   return 0;
 }

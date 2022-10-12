@@ -21,7 +21,7 @@ char shiftChar(char c, int rshift){
 string encryptCaesar(string plaintext, int rshift){
     string newString = "";
     for(int i = 0; i < plaintext.length(); i++){
-        newString += shiftChar(i, rshift);
+        newString += shiftChar(plaintext[i], rshift);
     }
     return newString;
 }
