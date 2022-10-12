@@ -1,4 +1,5 @@
 #pragma once
+using namespace std;
 
-char shiftChar(char c, int rshirt);
-string encryptCaesar(string plaintext, int rshirt);
+string encryptCaesar(string plaintext, int rshift);
+char shiftChar(char c, int rshift);

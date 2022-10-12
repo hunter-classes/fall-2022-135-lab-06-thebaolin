@@ -2,17 +2,21 @@
 #include "caesar.h"
 using namespace std;
 
-int main(){
-    
-}
-
 char shiftChar(char c, int rshift){
-    int value = (int)c;
-    if(value >= 65){
-        return (char)(value + rshift);
-    }
-    else
+    char newchar;
+    //if non alphabetic
+    if(!isalpha(c))
         return c;
+    //if char is uppercase
+    else if(isupper(c)){
+        newchar = (c - 'A' + rshift) % 26 + 'A';
+    }
+    //if char is lowercase
+    else{
+        newchar = (c - 'a' + rshift) % 26 + 'a';
+    }
+
+    return newchar;
 }
 string encryptCaesar(string plaintext, int rshift){
     string newString = "";
