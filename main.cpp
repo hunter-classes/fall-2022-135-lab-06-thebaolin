@@ -1,11 +1,13 @@
 #include <iostream>
-#include "caesar.cpp"
-#include "vigenere.cpp"
+#include "caesar.h"
+#include "vigenere.h"
+#include "decryption.h"
 using namespace std;
 
 int main()
 {
     cout<<encryptCaesar("Way to Go!", 5) << endl;
     cout<<encryptVigenere("Hello, World!", "cake") <<endl; //Jevpq, Wyvnd!
+    cout<<decryptCaesar("Rovvy, Gybvn!", 10);
   return 0;
 }

@@ -4,9 +4,9 @@
 #include "vigenere.h"
 using namespace std;
 
-string decryptCaesar(ciphertext, rshift){
+string decryptCaesar(string ciphertext, int rshift){
     return encryptCaesar(ciphertext, 26 - rshift);
 }
-string decryptVigenere(ciphertext, keyword){
+// string decryptVigenere(string ciphertext, string keyword){
     
-}
+// }
