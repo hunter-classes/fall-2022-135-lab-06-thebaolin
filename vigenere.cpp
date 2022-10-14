@@ -9,7 +9,6 @@ char shiftVigenere(char c, int rshift){
         newchar = c;
     else if(isupper(c)){
         newchar = (c - 'A' + rshift) % 26 + 'A';
-        cout<<"newchar is: " << newchar <<endl;
     }
     else{
         newchar = (c - 'a' + rshift) % 26 + 'a';

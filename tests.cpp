@@ -16,5 +16,9 @@ TEST_CASE("TASK B"){
 }
 
 TEST_CASE("TASK C"){
-    CHECK(encryptVigenere("The quick brown fox jumps over 13 lazy dogs. It also liked to eat cupcakes!", "cryptii") == "Vyc fnqkm spdpv nqo hjfxa qmcg 13 eiha umvl. Qb ccqd eqsgu rd xib elnrtsmu!");
+    CHECK(encryptVigenere("Goodbye, World!", "cat") == "Iohfbrg, Whtlw!");
+    CHECK(encryptVigenere("asdjhagsdjh2389479asjdbsa asdgjahsgdj", "CATATTACK") == "cswjatgunlh2389479tscwbuk cswgcthuqfj");
+    CHECK(encryptVigenere("CATATTACK2022", "woof") == "YOHFPHOHG2022");
+    CHECK(encryptVigenere("gibberish hello take up this fillerspace", "encryptdecrypt") == "kvdscgbvl jvjah xnmv se mkmu wgaeieugyrx");
+
 }
