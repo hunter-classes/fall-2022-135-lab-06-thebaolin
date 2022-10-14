@@ -5,15 +5,12 @@ using namespace std;
 
 char shiftVigenere(char c, int rshift){
     char newchar;
-    //if non alphabetic
     if(!isalpha(c))
         newchar = c;
-    //if char is uppercase
     else if(isupper(c)){
         newchar = (c - 'A' + rshift) % 26 + 'A';
         cout<<"newchar is: " << newchar <<endl;
     }
-    //if char is lowercase
     else{
         newchar = (c - 'a' + rshift) % 26 + 'a';
     }
@@ -41,9 +38,6 @@ string encryptVigenere(string plaintext, string keyword){
         
         if(j == keyword.length())
             j = 0;
-        cout<<plaintext[i]<< " ";
-        cout<<keyword[j] << " ";
-        cout<<shifter(keyword[j]) << endl;
         newstring += shiftVigenere(plaintext[i],shifter(keyword[j])); 
         if(isalpha(plaintext[i]))
             j++;
