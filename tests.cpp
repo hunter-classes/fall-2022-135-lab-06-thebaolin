@@ -17,8 +17,18 @@ TEST_CASE("TASK B"){
 
 TEST_CASE("TASK C"){
     CHECK(encryptVigenere("Goodbye, World!", "cat") == "Iohfbrg, Whtlw!");
-    CHECK(encryptVigenere("asdjhagsdjh2389479asjdbsa asdgjahsgdj", "CATATTACK") == "cswjatgunlh2389479tscwbuk cswgcthuqfj");
     CHECK(encryptVigenere("CATATTACK2022", "woof") == "YOHFPHOHG2022");
     CHECK(encryptVigenere("gibberish hello take up this fillerspace", "encryptdecrypt") == "kvdscgbvl jvjah xnmv se mkmu wgaeieugyrx");
+
+}
+
+TEST_CASE("TASK D"){
+    CHECK(decryptCaesar("Bfd yt Lt!",5) == "Way to Go!");
+    CHECK(decryptCaesar("L Oryh Frpsxwhu Vflhqfh!", 3) == "I Love Computer Science!");
+    CHECK(decryptCaesar("zopmaf zopmaly;;;;2329389z",7) == "shifty shifter;;;;2329389s");
+    CHECK(decryptCaesar("Rovvy, Gybvn!",10) == "Hello, World!");
+    CHECK(decryptVigenere("Iohfbrg, Whtlw!","cat") == "Goodbye, World!");
+    CHECK(decryptVigenere("YOHFPHOHG2022","woof") == "CATATTACK2022");
+    CHECK(decryptVigenere("kvdscgbvl jvjah xnmv se mkmu wgaeieugyrx","encryptdecrypt") == "gibberish hello take up this fillerspace");
 
 }

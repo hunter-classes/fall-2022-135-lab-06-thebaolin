@@ -2,16 +2,24 @@
 #include "caesar.h"
 #include "vigenere.h"
 #include "decryption.h"
-using namespace std;
 
 int main()
 {
-    //cout<<encryptCaesar("shifty shifter;;;;2329389s", 7) << endl;
-    //cout<<shiftChar('Y', 3)<<endl;
-    cout<<encryptVigenere("Goodbye, World!", "cat") <<endl; 
-    cout<<encryptVigenere("asdjhagsdjh2389479asjdbsa asdgjahsgdj", "CATATTACK") <<endl; 
-    cout<<encryptVigenere("CATATTACK2022", "woof") <<endl; 
-    cout<<encryptVigenere("gibberish hello take up this fillerspace", "encryptdecrypt") <<endl; 
-    //cout<<decryptCaesar("Rovvy, Gybvn!", 10);
+    std::cout << "shiftChar 'H' by 10\n";
+    std::cout << shiftChar('H', 10) << std::endl;
+
+    std::cout << "Caeser Cipher Encryption - Hello World , Shift 10 \n";
+    std::cout << encryptCaesar("Hello, World!", 10) << std::endl;	
+
+    std::cout << "Vigenere Cipher Encryption -  Hello World, keyword - cake \n";
+	  std::cout << encryptVigenere("Hello, World!", "cake") << std::endl;
+
+    std::cout << "Decrypt Caesar - Rovvy, Gybvn! , Shift 10\n";
+    std::cout << decryptCaesar("Rovvy, Gybvn!",10) << "\n";
+
+    std::cout << "Decrypt Vigenere - Jevpq, Wyvnd! keyword - cake \n";
+    std::cout << decryptVigenere("Jevpq, Wyvnd!", "cake") << std::endl;
+
+
   return 0;
 }

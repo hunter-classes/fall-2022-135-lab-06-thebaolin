@@ -2,7 +2,6 @@
 #include "vigenere.h"
 using namespace std;
 
-
 char shiftVigenere(char c, int rshift){
     char newchar;
     if(!isalpha(c))
