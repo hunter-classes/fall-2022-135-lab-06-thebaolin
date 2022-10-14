@@ -18,4 +18,4 @@ decryption.o: decryption.cpp decryption.h
 tests.o: tests.cpp doctest.h caesar.h vigenere.h
 	g++ -c -std=c++11 tests.cpp	
 clean:
-	rm -f main.o caesar.o vigenere.o decryption.o main tests tests.o
+	rm -f main.o caesar.o vigenere.o decryption.o main tests tests.o test-ascii
